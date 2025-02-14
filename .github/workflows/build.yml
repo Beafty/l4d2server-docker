@@ -13,7 +13,7 @@ on:
     tags:
       - "v*"
 env:
-  DOCKERHUB_USERNAME: hoshinorei
+  DOCKERHUB_USERNAME: beafty
 #GITHUB_CONTAINER_REGISTRY_DOMAIN: ghcr.io
   IMAGE_NAME: l4d2_beafty
 jobs:
