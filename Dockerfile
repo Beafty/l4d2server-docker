@@ -20,6 +20,8 @@ RUN wget https://steamcdn-a.akamaihd.net/client/installer/steamcmd_linux.tar.gz 
            /home/steam/l4d2server/left4dead2/motd.txt
 EXPOSE 27015 27015/udp
 VOLUME /home/steam/l4d2server/left4dead2/addons \
-       /home/steam/l4d2server/left4dead2/cfg
+    /home/steam/l4d2server/left4dead2/cfg \
+    /home/steam/l4d2server/left4dead2/motd.txt \
+    /home/steam/l4d2server/left4dead2/host.txt
 ENTRYPOINT ["/home/steam/l4d2server/srcds_run", "-game left4dead2"]
 CMD ["-insecure", "+exec server.cfg", "+map c1m1_hotel", "-port 27015"]
