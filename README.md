@@ -5,6 +5,7 @@
 First, prepare the `server.cfg` file, `host.txt` file and `motd.txt` file.
 
 The `addons` folder is used to store mods and plugins and can be empty.
+The `cfg` folder is used to store sercer.cfg and other things.
 
 Run the container by using Docker Compose.
 
