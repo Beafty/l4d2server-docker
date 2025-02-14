@@ -29,7 +29,7 @@ services:
     tty: true
     volumes:
       - ./addons/:/home/steam/l4d2server/left4dead2/addons/
-      - ./cfg:/home/steam/l4d2server/left4dead2/cfg
+      - ./cfg/server.cfg:/home/steam/l4d2server/left4dead2/cfg/server.cfg:rw
       - ./host.txt:/home/steam/l4d2server/left4dead2/host.txt:rw
       - ./motd.txt:/home/steam/l4d2server/left4dead2/motd.txt:rw
 ```
