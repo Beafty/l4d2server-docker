@@ -1,4 +1,4 @@
-# l4d2server-docker
+# l4d2server-docker-deskhub
 
 ## Usage
 
@@ -28,17 +28,18 @@ services:
     tty: true
     volumes:
       - ./addons/:/home/steam/l4d2server/left4dead2/addons/
-      - ./cfg/server.cfg:/home/steam/l4d2server/left4dead2/cfg/server.cfg:ro
-      - ./host.txt:/home/steam/l4d2server/left4dead2/host.txt:ro
-      - ./motd.txt:/home/steam/l4d2server/left4dead2/motd.txt:ro
+      - ./cfg:/home/steam/l4d2server/left4dead2/cfg:rw
+      - ./host.txt:/home/steam/l4d2server/left4dead2/host.txt:rw
+      - ./motd.txt:/home/steam/l4d2server/left4dead2/motd.txt:rw
 ```
 
 ```bash
-sudo docker-compose up -f <your_docker-compose_file_path> -d
+cd <your docker-file-path>
+docker-compose up -d
 ```
 
 Enter the game server console.
 
 ```bash
-sudo docker attach l4d2server
+docker attach l4d2server
 ```
