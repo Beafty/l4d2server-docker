@@ -16,8 +16,8 @@ services:
   l4d2server:
     command: "-secure +exec server.cfg +map c1m1_hotel -port 27015"
     container_name: l4d2server
-    image: hoshinorei/l4d2server:edge
-    # image: ghcr.io/hoshinorei/l4d2server:edge
+    image: beafty/l4d2_beafty:edge
+    # image: ghcr.io/hoshinorei/l4d2server:edge (Where I forked from)
     ports:
       - 27015:27015
       - 27015:27015/udp
