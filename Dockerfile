@@ -6,7 +6,7 @@ ENV LC_ALL=C.UTF-8
 ENV LANGUAGE=C.UTF-8
 RUN apt-get update && \
     apt-get install -y wget lib32gcc-s1 && \
-    apt install gcc-multilib \
+    apt-get install -y wget gcc-multilib && \
     apt-get clean && \
     rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/* && \
     adduser --home /home/steam --disabled-password --shell /bin/bash --gecos "user for running steam" --quiet steam
