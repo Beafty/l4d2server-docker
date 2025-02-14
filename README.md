@@ -1,4 +1,4 @@
-# l4d2server-docker-deskhub
+# l4d2server-docker-deskhub(for addons and cfg)
 
 ## Usage
 
